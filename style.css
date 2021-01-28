@@ -262,6 +262,21 @@ RESPONSIVE DESIGN (MEDIA QUERIES)
         height: 30vw;
         overflow-y: hidden;
     }
+    
+    div.my-content-module{
+        padding-top: 2rem;
+    }
+    
+    div.my-content-module div {
+        display: flex;
+        
+    }
+    
+    div.my-content-module div figure,
+    div.my-content-module div p{
+        width: 50%
+    }
+    
 
 
     footer {
@@ -285,9 +300,16 @@ RESPONSIVE DESIGN (MEDIA QUERIES)
 
     .single article section p,
     .single article section h3,
-    .single article section h4 {
+    .single article section h4,
+     div.my-content-module{
         padding-left: 15vw;
         padding-right: 15vw;
+    }
+    
+    div.my-content-module div p{
+        padding-left: 1vw;
+        padding-right: 1vw;
+        
     }
 
 }
