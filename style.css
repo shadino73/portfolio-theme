@@ -1,3 +1,308 @@
 /*
 Theme Name: Portfolio Theme
 */
+
+
+/*
+RESET
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav.main-nav {
+    display: none;
+}
+
+
+/*
+LAYOUT
+*/
+
+.more-link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    padding: 1rem 20px;
+}
+
+article {
+    padding-bottom: 2rem;
+}
+
+article figure img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    padding-top: 50px;
+}
+
+footer,
+nav.mobile-nav,
+article {
+    min-height: 100vh;
+}
+
+footer p {
+    padding-bottom: 0;
+}
+
+/*
+NAVIGATION
+*/
+
+/**Nav Reset **/
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+/**Nav Burger Icon **/
+
+nav.burger-icon {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    padding: 8px;
+}
+
+nav.burger-icon span {
+    display: block;
+    height: 8px;
+    width: 34px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+}
+
+/**Nav Mobile Menu **/
+
+nav.mobile-nav {
+    padding-top: 50px;
+}
+
+nav.mobile-nav ul {
+    padding: 0;
+
+}
+
+nav.mobile-nav ul a {
+    display: block;
+    width: 100%;
+    padding: 0.3em 20px;
+}
+
+/**Nav Main Menu **/
+
+nav.main-nav {
+    position: sticky;
+    top: 0;
+}
+
+
+/**Horizontal Menus (main-nav & footer-nav) **/
+
+nav.main-nav ul,
+nav.footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav.main-nav ul li,
+nav.footer-nav ul li {
+    margin-right: 1em;
+}
+
+
+
+/*
+COLOR & STYLE
+*/
+
+/**C&S Backgrounds **/
+
+body {
+    background: hsl(200, 21%, 13%);
+}
+
+header {
+    background: hsl(200, 21%, 34%);
+}
+
+main {
+    background: #fff;
+}
+
+/**C&S Type Colors **/
+
+main,
+main a {
+    color: hsl(200, 21%, 13%);
+}
+
+header,
+footer,
+header a,
+footer a {
+    color: hsl(200, 21%, 89%);
+}
+
+main a:hover,
+nav.main-nav a:hover,
+footer a:hover {
+    color: rgb(255, 128, 0);
+}
+
+
+/**C&S Burger Icon **/
+
+nav.burger-icon span {
+    background: hsl(200, 21%, 68%);
+}
+
+/**C&S Mobile Menu **/
+
+nav.mobile-nav {
+    background: hsl(200, 21%, 34%);
+}
+
+nav.mobile-nav a {
+    color: hsl(200, 21%, 89%);
+    border-bottom: 1px solid hsl(200, 21%, 89%);
+}
+
+nav.mobile-nav li:first-child {
+    border-top: 1px solid hsl(200, 21%, 89%);
+}
+
+/**C&S Main Menu **/
+
+nav.main-nav {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav.main-nav a {
+    color: hsl(200, 21%, 34%);
+}
+
+
+
+
+/*
+TYPOGRAPHY
+*/
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/**Type Mobile Menu **/
+
+nav.mobile-nav {
+    font-size: 2.5em;
+}
+
+/**Type Main Menu **/
+
+nav.main-nav {
+    font-weight: 700;
+}
+
+/*
+RESPONSIVE DESIGN (MEDIA QUERIES)
+*/
+
+@media only screen and (min-width: 600px) {
+
+    /**Menu Reset**/
+
+    nav.main-nav {
+        display: block;
+    }
+
+    nav.mobile-nav,
+    nav.burger-icon {
+        display: none;
+    }
+
+    /**600px Two Col Layout**/
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home article {
+        width: 50%;
+        min-height: 70vw;
+    }
+
+    .home article figure {
+        height: 30vw;
+        overflow-y: hidden;
+    }
+
+
+    footer {
+        min-height: 20vh;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /**1024px Three Col Layout**/
+
+    .home article {
+        width: 33.33%;
+        min-height: 40vw;
+    }
+
+    .home article figure {
+        height: 22vw;
+    }
+
+    .single article section p,
+    .single article section h3,
+    .single article section h4 {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+    /**1440px Four Col Layout**/
+
+    .home article {
+        width: 25%;
+        min-height: 40vw;
+    }
+
+    .home article figure {
+        height: 16.5vw;
+    }
+
+}

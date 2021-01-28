@@ -1,7 +1,14 @@
+<?php
+/*
+Template Name: Custom Template 1
+Template Post Type: post, page
+*/
+?>
+
 <?php get_header(); ?>
 
 <h1><?php bloginfo('title'); ?></h1>
-<p class="check">index.php</p>
+<p class="check">custom-template-01.php</p>
 </header>
 
 

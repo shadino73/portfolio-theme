@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <h1><?php bloginfo('title'); ?></h1>
-<p class="check">index.php</p>
+<p class="check">singular.php</p>
 </header>
 
 
