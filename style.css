@@ -267,11 +267,12 @@ RESPONSIVE DESIGN (MEDIA QUERIES)
         padding-top: 2rem;
     }
     
+    div.my-gallery-01 div,
     div.my-content-module div {
         display: flex;
-        
+   flex-wrap: wrap;      
     }
-    
+     div.my-gallery-01 div figure,
     div.my-content-module div figure,
     div.my-content-module div p{
         width: 50%
@@ -311,7 +312,11 @@ RESPONSIVE DESIGN (MEDIA QUERIES)
         padding-right: 1vw;
         
     }
-
+    div.my-gallery-01 div figure,
+    div.my-content-module div figure,
+    div.my-content-module div p{
+        width: 25%
+    }
 }
 
 @media only screen and (min-width: 1440px) {
